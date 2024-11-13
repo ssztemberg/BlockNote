@@ -42,6 +42,7 @@ export const TextAlignButton = (props: { textAlignment: TextAlignment }) => {
   const selectedBlocks = useSelectedBlocks(editor);
 
   const textAlignment = useMemo(() => {
+    return;
     const block = selectedBlocks[0];
 
     if (checkBlockHasDefaultProp("textAlignment", block, editor)) {
